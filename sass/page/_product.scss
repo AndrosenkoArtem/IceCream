@@ -1,0 +1,111 @@
+.product {
+  padding: 60px 0px;
+}
+.product__title {
+  color: $red-text-color;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  font-family: $fontlogo;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+}
+.product__title--pink {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  color: $pink-color;
+  font-family: $fontlogo;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+}
+.product__list {
+  display: flex;
+  margin-top: 281px;
+}
+.product__items {
+  position: relative;
+  width: 368px;
+  height: 535px;
+  border-radius: 24px;
+  background-color: #f0d1a5;
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+  &:first-child {
+    background-color: #ffb8ca;
+  }
+  &:last-child {
+    background-color: #c2e297;
+  }
+}
+.product__img {
+  position: absolute;
+  width: 368px;
+  bottom: 402px;
+  transition: none;
+  .product__items:hover & {
+    transform: rotatey(360deg);
+    transition: 300ms ease 150ms;
+  }
+}
+.product__caption {
+  text-align: center;
+  margin: 0px;
+  padding-top: 165px;
+  padding-bottom: 32px;
+  font-family: $fontlogo;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: $white-color;
+}
+.product__cross {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 26px;
+  height: 6px;
+  cursor: pointer;
+}
+.product__subtitle {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 60px;
+  width: 245px;
+  @include font-style($height: 28.16px);
+  letter-spacing: 0.04em;
+  color: $white-color;
+}
+.product__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: $white-color;
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+.product__icon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15px;
+  height: 15px;
+  fill: $red-text-color;
+}

@@ -1,0 +1,141 @@
+.hero-section {
+  background-color: $pink-color;
+  padding-top: 147px;
+  padding-bottom: 60px;
+}
+.hero {
+  position: relative;
+  width: 1200px;
+}
+.hero__title {
+  margin: 0;
+  font-family: $fontlogo;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  color: $white-color;
+}
+.hero__title--red {
+  display: flex;
+  font-family: $fontlogo;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0.04em;
+  color: $red-text-color;
+}
+.hero__list {
+  margin-top: 24px;
+}
+.hero__items {
+  display: inline;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+  &:not(:last-child) button {
+    padding: 11px 24px 11px 24px;
+  }
+  &:last-child button {
+    padding: 11px 21px;
+  }
+}
+
+.hero__button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 22px;
+  color: #d41443;
+  background-color: $white-color;
+  @include font-style($size: 14px, $height: 18.23px, $weight: 400);
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $red-text-color;
+  }
+}
+
+.hero__subtitle:not(:last-child) {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: $white-color;
+  @include font-style($size: 14px, $height: 18.23px, $weight: 400);
+}
+.hero__subtitle:nth-child(2n) {
+  top: 130px;
+  color: $white-color;
+  @include font-style($size: 14px, $height: 18.23px, $weight: 400);
+}
+.hero__subtitle--red {
+  position: absolute;
+  bottom: 24px;
+  right: 0px;
+  color: $red-text-color;
+  font-family: $fontlogo;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0.04em;
+}
+.hero__icon {
+  position: absolute;
+  right: -14px;
+  bottom: 53px;
+  width: 30px;
+  height: 30px;
+}
+.hero__icon--bottom {
+  right: -16px;
+  bottom: 50px;
+}
+.hero__milk-list {
+  display: flex;
+  margin-top: 33px;
+}
+.hero__milk-subtitle {
+  padding-top: 68px;
+  width: 200px;
+  color: $white-color;
+  @include font-style($weight: 400, $size: 14px, $height: 19.6px);
+}
+.hero__milk-button {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: $white-color;
+}
+.hero__milk-arrow {
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  width: 7px;
+  height: 10px;
+  fill: $red-text-color;
+}
+.hero__milk-button:hover,
+.hero__milk-button:focus {
+  background-color: #ecebeb;
+}
+.hero__horn {
+  position: absolute;
+  bottom: -61px;
+  right: 328px;
+}
+.hero__ellipse {
+  position: absolute;
+  top: -90px;
+  right: 130px;
+  width: 534px;
+  height: 534px;
+}
+.hero__tasty {
+  position: absolute;
+  bottom: -61px;
+  right: 16px;
+}
