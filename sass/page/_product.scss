@@ -49,7 +49,8 @@
   width: 368px;
   bottom: 402px;
   transition: none;
-  .product__items:hover & {
+  .product__items:hover &,
+  .product__items:focus & {
     transform: rotatey(360deg);
     transition: 300ms ease 150ms;
   }
@@ -97,7 +98,8 @@
   border: none;
   border-radius: 50px;
   background-color: $white-color;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 }

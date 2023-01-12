@@ -32,23 +32,23 @@
         <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__items">
-              <a class="site-nav__link" href="">Home</a>
+              <a class="site-nav__link" href="#">Home</a>
             </li>
             <li class="site-nav__items">
-              <a class="site-nav__link" href="">About us</a>
+              <a class="site-nav__link" href="#bio">About us</a>
             </li>
             <li class="site-nav__items">
-              <a class="site-nav__link" href="">How it’s made?</a>
+              <a class="site-nav__link" href="#love">How it’s made?</a>
             </li>
             <li class="site-nav__items">
-              <a class="site-nav__link" href="">Our products</a>
+              <a class="site-nav__link" href="#product">Our products</a>
             </li>
             <li class="site-nav__items">
-              <a class="site-nav__link" href="">Contact</a>
+              <a class="site-nav__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
-        <button class="button-pay" type="button">
+        <button class="button-pay" type="button" data-buy-modal-open>
           Buy now
           <svg class="button-pay__icon">
             <use href="./images/sprite.svg#icon-arrow-right"></use>
@@ -65,10 +65,16 @@
           </h1>
           <ul class="hero__list">
             <li class="hero__items">
-              <button class="hero__button" type="button">Products</button>
+              <a href="#product"
+                ><button class="hero__button" type="button">Products</button></a
+              >
             </li>
             <li class="hero__items">
-              <button class="hero__button" type="button">How it’s made?</button>
+              <a href="#love"
+                ><button class="hero__button" type="button">
+                  How it’s made?
+                </button></a
+              >
             </li>
           </ul>
           <p class="hero__subtitle">
@@ -109,7 +115,7 @@
           <img class="hero__tasty" src="./images/big-ice.png" alt="big-ice" />
         </div>
       </section>
-      <section class="product">
+      <section class="product" id="product">
         <div class="container">
           <h2 class="product__title">
             <span class="product__title--pink">100% NATURAL</span>
@@ -170,8 +176,112 @@
             </li>
           </ul>
         </div>
+        <!-- product-modal -->
+        <div class="buy-section" data-buy-modal>
+          <div class="buy">
+            <button type="button" class="buy__close" data-buy-modal-close>
+              <svg class="buy__icon--close">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <h2 class="buy__title">
+              <span class="buy__title--pink">SPECICAL FOR YOU</span>
+              SALE 50%
+            </h2>
+            <ul class="buy__list">
+              <li class="buy__items">
+                <img class="buy__img" src="./images/ice-pink.png" alt="" />
+                <h3 class="buy__caption">ICE CREAM</h3>
+                <svg class="buy__cross">
+                  <use href="./images/sprite.svg#icon-cross-white"></use>
+                </svg>
+                <p class="buy__subtitle">
+                  <span class="buy__subtitle--red"> 10$ </span>
+                  <span class="buy__subtitle--50"> -50% </span>
+                  <span class="buy__subtitle--3"> 5$ </span>
+                </p>
+                <div class="red-line"></div>
+                <div class="buy__group-button">
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <p>1</p>
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="buy__items">
+                <img class="buy__img" src="./images/banana-ice.png" alt="" />
+                <h3 class="buy__caption">ICE COFFEE</h3>
+                <svg class="buy__cross">
+                  <use href="./images/sprite.svg#icon-cross-white"></use>
+                </svg>
+                <p class="buy__subtitle">
+                  <span class="buy__subtitle--red"> 6$ </span>
+                  <span class="buy__subtitle--50"> -50% </span>
+                  <span class="buy__subtitle--3"> 3$ </span>
+                </p>
+                <div class="red-line"></div>
+                <div class="buy__group-button">
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <p>1</p>
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="buy__items">
+                <img class="buy__img" src="./images/ice-chocolate.png" alt="" />
+                <h3 class="buy__caption">ICE CREAM</h3>
+                <svg class="buy__cross">
+                  <use href="./images/sprite.svg#icon-cross-white"></use>
+                </svg>
+                <p class="buy__subtitle">
+                  <span class="buy__subtitle--red"> 7$ </span>
+                  <span class="buy__subtitle--50"> -50% </span>
+                  <span class="buy__subtitle--3"> 4$ </span>
+                </p>
+                <div class="red-line"></div>
+                <div class="buy__group-button">
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <p>1</p>
+                  <button class="buy__button" type="button">
+                    <svg class="buy__icon">
+                      <use href="./images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <a href="./index.html">
+              <button class="complate__button" type="submit">
+                SUBMIT
+                <svg class="complate__svg">
+                  <use href="./images/sprite.svg#icon-button_arrow-white"></use>
+                  <use href="./images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <script src="./js/buy-modal.js"></script>
       </section>
-      <section class="love-section">
+      <section class="love-section" id="love">
         <div class="container love">
           <h2 class="love__title">
             <span class="love__title--pink">TRADITION AND LOVE</span>
@@ -194,7 +304,7 @@
                   >Aliquam erat volutpat. Aenean accumsan.</span
                 >
               </p>
-              <button class="love__button" type="button">
+              <button class="love__button" type="button" data-modal-about-open>
                 Read more
                 <svg class="love__svg">
                   <use href="./images/sprite.svg#icon-button_arrow-white"></use>
@@ -233,8 +343,66 @@
             </li>
           </ul>
         </div>
+
+        <!-- about-modal -->
+        <div class="about-modal-backdrop is-hidden" data-modal-about>
+          <div class="data-modal-about">
+            <button
+              class="data-modal-about__btn"
+              type="button"
+              data-modal-about-close
+            >
+              <svg class="data-modal-about__svg" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="about-modal__description">
+              <h4 class="about-modal__title upper-title">Favorite taste</h4>
+              <p class="about-modal__lable">Strawberry</p>
+              <ul class="about-modal__list">
+                <li class="about-modal__item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod labore et dolore magna aliqua.
+                </li>
+                <li class="about-modal__item">
+                  Quis ipsum suspendisse ultrices gravida.
+                </li>
+                <li class="about-modal__item">
+                  Risus commodo viverra maecenas.
+                </li>
+              </ul>
+              <p class="about-modal__lable">Cherry</p>
+              <ul class="about-modal__list">
+                <li class="about-modal__item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod labore et dolore magna aliqua.
+                </li>
+                <li class="about-modal__item">
+                  Quis ipsum suspendisse ultrices gravida.
+                </li>
+                <li class="about-modal__item">
+                  Risus commodo viverra maecenas.
+                </li>
+              </ul>
+              <p class="about-modal__lable">Raspberry</p>
+              <ul class="about-modal__list">
+                <li class="about-modal__item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod labore et dolore magna aliqua.
+                </li>
+                <li class="about-modal__item">
+                  Quis ipsum suspendisse ultrices gravida.
+                </li>
+                <li class="about-modal__item">
+                  Risus commodo viverra maecenas.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script src="js/about-modal.js"></script>
       </section>
-      <section class="bio-section">
+      <section class="bio-section" id="bio">
         <div class="container bio">
           <h2 class="hide">biography</h2>
           <div class="bio__container">
@@ -367,7 +535,7 @@
           </div>
         </div>
       </section>
-      <section class="filials-container">
+      <section class="filials-container" id="contact">
         <div class="container filials">
           <h2 class="hide">filials</h2>
           <ul class="filials__list">
@@ -479,7 +647,11 @@
           </ul>
           <ul class="button-list">
             <li class="button-list__item">
-              <button class="button-list__button" type="button">
+              <button
+                class="button-list__button"
+                type="button"
+                data-modal-location-open
+              >
                 Our Locations
                 <svg class="button-list__icon">
                   <use href="./images/sprite.svg#icon-button_arrow-white"></use>
@@ -488,24 +660,130 @@
               </button>
             </li>
             <li class="button-list__item">
-              <button class="button-list__button" type="button">
-                Franchise
-                <svg class="button-list__icon">
-                  <use href="./images/sprite.svg#icon-button_arrow-white"></use>
-                  <use href="./images/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
+              <a href="./form.html">
+                <button class="button-list__button" type="button">
+                  Franchise
+                  <svg class="button-list__icon">
+                    <use
+                      href="./images/sprite.svg#icon-button_arrow-white"
+                    ></use>
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </a>
             </li>
           </ul>
         </div>
+        <div class="location">
+          <div class="location__backdrop is-hidden" data-modal-location>
+            <div class="location__modal">
+              <h2></h2>
+              <button
+                class="location__button"
+                type="button"
+                data-modal-location-close
+              >
+                <h2 class="title">
+                  <span class="title--pink"> WE ARE IN YOUR HEART</span>
+                  WITH ICE CREAM
+                </h2>
+                <ul class="location__list">
+                  <li class="location__item">
+                    <h3 class="location__title">CAFE</h3>
+                    <ul class="city">
+                      <li class="city__item">
+                        <h4 class="city__title">Chicago</h4>
+                      </li>
+                      <li class="city__item">
+                        <p class="city__subtitle">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
+                      </li>
+                    </ul>
+                    <ul class="date">
+                      <div class="maps">
+                        <iframe
+                          width="100%"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0213046547165!2d-87.62771767049558!3d41.892398906048236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cab8052b907%3A0xcc771bc1bdcd634e!2sSecond%20Story%20Bar!5e0!3m2!1sru!2sua!4v1673469625781!5m2!1sru!2sua"
+                          width="600"
+                          height="450"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="location__item">
+                    <h3 class="location__title">FOOD TRUCK</h3>
+                    <ul class="city">
+                      <li class="city__item">
+                        <h4 class="city__title">Los Angeles</h4>
+                      </li>
+                      <li class="city__item">
+                        <p class="city__subtitle">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="maps">
+                      <iframe
+                        width="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105711.2795336777!2d-118.36857798981858!3d34.10852378049685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c627ee0657d1%3A0xdbf34a1dd297a6c5!2sSam&#39;s%20Hofbrau!5e0!3m2!1sru!2sua!4v1673470509557!5m2!1sru!2sua"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </li>
+                  <li class="location__item">
+                    <h3 class="location__title">CAFE</h3>
+                    <ul class="city">
+                      <li class="city__item">
+                        <h4 class="city__title">New York</h4>
+                      </li>
+                      <li class="city__item">
+                        <p class="city__subtitle">
+                          Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
+                      </li>
+                    </ul>
+                    <ul class="date">
+                      <div class="maps">
+                        <iframe
+                          width="100%"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4254153443503!2d-74.0043593846711!3d40.730663744410485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259924a960df1%3A0x43b20488619b3f43!2sJoe&#39;s%20Pizza!5e0!3m2!1sru!2sua!4v1673470695653!5m2!1sru!2sua"
+                          width="600"
+                          height="450"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <svg class="location__icon" width="18" height="18">
+                  <use href="./images/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <script src="js/location.js"></script>
       </section>
     </main>
     <footer class="footer-container">
       <div class="container footer">
         <div class="footer__group">
           <h2 class="footer__title">
-            <span class="footer__title--pink"> homemade ice cream made </span>
-            with passion
+            <span class="footer__title--pink"> HOMEMADE ICE CREAM MADE</span>
+            WITH PASSION
           </h2>
           <ul class="footer__list">
             <li class="footer__item">
@@ -541,7 +819,7 @@
         <p class="footer__subtitle">© 2022 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="./index.js"></script>
-    <script type="module" src="./swiper.js"></script>
+    <script src="js/index.js"></script>
+    <script type="module" src="js/swiper.js"></script>
   </body>
 </html>
