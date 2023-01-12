@@ -1243,7 +1243,7 @@ ul {
 .buy__close {
   position: absolute;
   top: 15%;
-  right: 15%;
+  right: 25%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
