@@ -29,31 +29,51 @@
             <use href="./images/sprite.svg#icon-ice-cream"></use>
           </svg>
         </a>
-        <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="#">Home</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="#bio">About us</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="#love">How it’s made?</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="#product">Our products</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button-pay" type="button" data-buy-modal-open>
+        <button type="button" class="button-open" data-menu-button>
+          <svg class="button-open__icon">
+            <use href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <button class="button-tablet" type="button" data-buy-modal-open>
           Buy now
-          <svg class="button-pay__icon">
+          <svg class="button-tablet__icon">
             <use href="./images/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
+        <div class="backgruond-mobile" backdrop>
+          <div class="menu-container" data-menu>
+            <nav class="site-nav">
+              <ul class="site-nav__list">
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="#">Home</a>
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="#bio">About us</a>
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="#love">How it’s made?</a>
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="#product">Our products</a>
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="button-pay" type="button" data-buy-modal-open>
+              Buy now
+              <svg class="button-pay__icon">
+                <use href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <button type="button" class="button-close">
+              <svg class="button-close__icon" data-close-menu>
+                <use href="./images/sprite.svg#close-modal"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -268,15 +288,13 @@
                 </div>
               </li>
             </ul>
-            <a href="./index.html">
-              <button class="complate__button" type="submit">
-                SUBMIT
-                <svg class="complate__svg">
-                  <use href="./images/sprite.svg#icon-button_arrow-white"></use>
-                  <use href="./images/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </a>
+            <button class="complate__button" type="submit">
+              SUBMIT
+              <svg class="complate__svg">
+                <use href="./images/sprite.svg#icon-button_arrow-white"></use>
+                <use href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <script src="./js/buy-modal.js"></script>
@@ -820,6 +838,7 @@
       </div>
     </footer>
     <script src="js/index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script type="module" src="js/swiper.js"></script>
   </body>
 </html>

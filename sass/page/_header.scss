@@ -1,6 +1,7 @@
 .header-lock {
   position: fixed;
   z-index: 3;
+  top: 0;
   padding-top: 20px;
   width: 100%;
   background: linear-gradient(to bottom, #ffb8ca 0%, transparent 100%);
@@ -21,17 +22,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px;
+  @media screen and (max-width: 767px) {
+    padding: 0px 20px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0px 32px;
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+.logo {
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 293px;
+  }
 }
 .logo__icon {
   width: 199px;
   height: 50px;
 }
+.menu-container {
+  display: contents;
+}
+.site-nav {
+  @media screen and (max-width: 1199px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .site-nav__list {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }
 .site-nav__items:not(:last-child) {
   margin-right: 35px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 22px;
+  }
 }
 .site-nav__link {
   color: $white-color;
@@ -55,6 +91,13 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (max-width: 1199px) {
+    width: 186px;
+    margin-top: 26px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .button-pay__icon {
@@ -63,4 +106,36 @@
   right: 37px;
   width: 6px;
   height: 10px;
+}
+.button-tablet {
+  position: relative;
+  padding: 0px 53px 0px 37px;
+  min-height: 44px;
+  border: none;
+  border-radius: 22px;
+  color: $red-text-color;
+  background-color: $white-color;
+  @include font-style;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    width: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 18px;
+    right: 37px;
+    width: 6px;
+    height: 10px;
+  }
 }
