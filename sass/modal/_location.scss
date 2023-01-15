@@ -37,8 +37,9 @@
 .title {
   position: absolute;
   top: 20px;
-  left: -750px;
+  left: 30%;
   display: inline-block;
+  text-align: center;
   margin: 0;
   max-width: 450px;
   font-family: $fontlogo, sans-serif;
@@ -47,6 +48,10 @@
   line-height: 55px;
   letter-spacing: 0.06em;
   color: #d41443;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    left: 36%;
+  }
 }
 .title--pink {
   display: flex;
@@ -58,25 +63,23 @@
   color: $white-color;
 }
 .location__button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  justify-content: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: -40px;
   width: 30px;
   height: 30px;
+  border: none;
   border-radius: 50%;
-  margin-left: auto;
   padding: 0;
   background-color: $white-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 767px) {
+    margin-right: 0px;
+  }
 }
 .location__icon {
   display: block;
-  margin: auto auto;
+  margin: auto;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   :focus {
@@ -87,11 +90,24 @@
 .location {
   .location__list {
     position: absolute;
-    left: -1135px;
-    bottom: -900px;
+    bottom: -150px;
+    left: 15px;
     display: flex;
-    justify-content: space-between;
     text-align: start;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin: auto;
+      right: 20px;
+      left: 20px;
+      top: 250px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      left: 20px;
+      right: 20px;
+      width: 100vw;
+      margin: auto;
+    }
   }
   &__item {
     width: 368px;
@@ -111,6 +127,20 @@
     &focus {
       box-shadow: 1px 4px 6px 0px rgb(0 0 0 / 16%),
         0px 4px 4px 0px rgb(0 0 0 / 6%), 0px 1px 1px 0px rgb(0 0 0 / 12%);
+    }
+    @media screen and (max-width: 450px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 767px) {
+      margin: auto;
+      &:not(:last-child) {
+        margin-right: auto;
+        margin-bottom: 40px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 300px;
+      margin: 0px;
     }
   }
 

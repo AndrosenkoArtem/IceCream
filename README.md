@@ -18,7 +18,5 @@
 
 <!--  -->
 
-@media screen and (max-width: 767px) {
-}
 @media screen and (max-width: 1199px) {
 }

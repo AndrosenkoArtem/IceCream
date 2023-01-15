@@ -6,4 +6,5 @@ var swiper = new Swiper(".mySwiper", {
     dynamicBullets: true,
   },
   speed: 500,
+  autoHeight: true,
 });
