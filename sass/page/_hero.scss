@@ -5,20 +5,26 @@
   @media screen and (max-width: 767px) {
     padding-top: 0px;
     padding-bottom: 0px;
-    background-image: url(/images/Ellipse3.png);
+    background-image: url("../../images/hero/Ellipse3.png");
     background-position: calc(50% + 50px) calc(50% + 2px);
     background-repeat: no-repeat;
     background-size: 346px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../../images/hero/Ellipse3@2x.png");
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 102px;
     padding-bottom: 16px;
   }
 }
+
 .hero {
   position: relative;
   @media screen and (max-width: 767px) {
-    background-image: url(../../images/ice-horn.png);
+    background-image: url("../../images/hero/ice-horn.png");
     text-align: left;
     height: 502px;
     background-position: calc(50% + 43px) bottom;
@@ -26,6 +32,11 @@
     background-size: 171px;
     padding-top: 194px;
     width: 100%;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../../images/hero/ice-horn@2x.png");
+    }
   }
 }
 .hero__title {

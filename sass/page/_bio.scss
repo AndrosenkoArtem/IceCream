@@ -9,7 +9,7 @@
 }
 .bio {
   position: relative;
-  padding-top: 361px;
+  padding-top: 461px;
   text-align: center;
   @media screen and (max-width: 767px) {
     padding-top: 169px;
@@ -21,10 +21,13 @@
 .bio__container {
   position: absolute;
   display: flex;
-  top: -64px;
-  left: 220px;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    top: -85px;
+    left: 73px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
@@ -68,12 +71,12 @@
 
   .bio__img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     margin: 5px;
     @media screen and (max-width: 767px) {
-      width: 43px;
-      height: 43px;
+      width: auto;
+      height: auto;
       margin: 1.265px;
     }
   }

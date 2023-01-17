@@ -32,12 +32,12 @@
   border-radius: 10px;
 
   background-size: 100%;
-  background-image: url(../images/bg-about-image-sm@1x.png);
+  background-image: url("../images/love/bg-love-mobile@1x.png");
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg-about-image-sm@2x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../../images/love/bg-love-mobile@2x.png");
   }
   @media screen and (min-width: 768px) {
     width: 528px;

@@ -113,11 +113,63 @@
           </p>
 
           <div class="hero__milk-list">
-            <img
-              class="hero__milk"
-              src="./images/big-milk.png"
-              alt="big-milk"
-            />
+            <picture>
+              <!-- <source
+                type="image/webp"
+                srcset="
+                  ./images/hero/big-milk-mobile@1x.webp 1x,
+                  ./images/hero/big-milk-mobile@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/hero/big-milk-mobile@1x.png 1x,
+                  ./images/hero/big-milk-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              /> -->
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/hero/big-milk-tablet@1x.webp 1x,
+                  ./images/hero/big-milk-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/hero/big-milk-tablet@1x.png 1x,
+                  ./images/hero/big-milk-tablet@2x.png 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/hero/big-milk.webp    1x,
+                  ./images/hero/big-milk@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/hero/big-milk.png    1x,
+                  ./images/hero/big-milk@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                loading="lazy"
+                class="hero__milk"
+                src="./images/hero/big-milk.png"
+                alt="big-milk"
+              />
+            </picture>
+
             <p class="hero__milk-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
@@ -131,8 +183,103 @@
           <svg class="hero__ellipse">
             <use href="./images/sprite.svg#icon-Ellipse-2"></use>
           </svg>
-          <img class="hero__horn" src="./images/ice-horn.png" alt="ice-horn" />
-          <img class="hero__tasty" src="./images/big-ice.png" alt="big-ice" />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                ./images/hero/ice-horn-mobile@1x.webp 1x,
+                ./images/hero/ice-horn-mobile@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./images/hero/ice-horn-mobile@1x.png 1x,
+                ./images/hero/ice-horn-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./images/hero/ice-horn-tablet@1x.webp 1x,
+                ./images/hero/ice-horn-tablet@2x.webp 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./images/hero/ice-horn-tablet@1x.png 1x,
+                ./images/hero/ice-horn-tablet@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./images/hero/ice-horn.webp    1x,
+                ./images/hero/ice-horn@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./images/hero/ice-horn.png    1x,
+                ./images/hero/ice-horn@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              loading="lazy"
+              class="hero__horn"
+              src="./images/hero/ice-horn.png"
+              alt="ice-horn"
+            />
+          </picture>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                ./images/hero/big-ice-tablet@1x.webp 1x,
+                ./images/hero/big-ice-tablet@2x.webp 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./images/hero/big-ice-tablet@1x.png 1x,
+                ./images/hero/big-ice-tablet@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1199px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./images/hero/big-ice.webp    1x,
+                ./images/hero/big-ice@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              type="image/png"
+              srcset="
+                ./images/hero/big-ice.png    1x,
+                ./images/hero/big-ice@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              loading="lazy"
+              class="hero__tasty"
+              src="./images/hero/big-ice.png"
+              alt="big-ice"
+            />
+          </picture>
         </div>
       </section>
       <section class="product" id="product">
@@ -143,7 +290,62 @@
           </h2>
           <ul class="product__list">
             <li class="product__items">
-              <img class="product__img" src="./images/ice-pink.png" alt="" />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-pink-mobile@1x.webp 1x,
+                    ./images/product/ice-pink-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-pink-mobile@1x.png 1x,
+                    ./images/product/ice-pink-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-pink-tablet@1x.webp 1x,
+                    ./images/product/ice-pink-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-pink-tablet@1x.png 1x,
+                    ./images/product/ice-pink-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-pink.webp    1x,
+                    ./images/product/ice-pink@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-pink.png    1x,
+                    ./images/product/ice-pink@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="product__img"
+                  src="./images/product/ice-pink.png"
+                  alt="ice-pink"
+                />
+              </picture>
+
               <h3 class="product__caption">ICE CREAM</h3>
               <svg class="product__cross">
                 <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -159,7 +361,62 @@
               </button>
             </li>
             <li class="product__items">
-              <img class="product__img" src="./images/banana-ice.png" alt="" />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/banana-ice-mobile@1x.webp 1x,
+                    ./images/product/banana-ice-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/banana-ice-mobile@1x.png 1x,
+                    ./images/product/banana-ice-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/banana-ice-tablet@1x.webp 1x,
+                    ./images/product/banana-ice-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/banana-ice-tablet@1x.png 1x,
+                    ./images/product/banana-ice-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/banana-ice.webp    1x,
+                    ./images/product/banana-ice@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/banana-ice.png    1x,
+                    ./images/product/banana-ice@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="product__img"
+                  src="./images/product/banana-ice.png"
+                  alt=""
+                />
+              </picture>
+
               <h3 class="product__caption">ICE COFFEE</h3>
               <svg class="product__cross">
                 <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -175,11 +432,61 @@
               </button>
             </li>
             <li class="product__items">
-              <img
-                class="product__img"
-                src="./images/ice-chocolate.png"
-                alt=""
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-chocolate-mobile@1x.webp 1x,
+                    ./images/product/ice-chocolate-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-chocolate-mobile@1x.png 1x,
+                    ./images/product/ice-chocolate-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-chocolate-tablet@1x.webp 1x,
+                    ./images/product/ice-chocolate-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-chocolate-tablet@1x.png 1x,
+                    ./images/product/ice-chocolate-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/product/ice-chocolate.webp    1x,
+                    ./images/product/ice-chocolate@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/product/ice-chocolate.png    1x,
+                    ./images/product/ice-chocolate@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="product__img"
+                  src="./images/product/ice-chocolate.png"
+                  alt=""
+                />
+              </picture>
               <h3 class="product__caption">ICE CREAM</h3>
               <svg class="product__cross">
                 <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -210,7 +517,62 @@
             </h2>
             <ul class="buy__list">
               <li class="buy__items">
-                <img class="buy__img" src="./images/ice-pink.png" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-pink-mobile@1x.webp 1x,
+                      ./images/product/ice-pink-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-pink-mobile@1x.png 1x,
+                      ./images/product/ice-pink-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-pink-tablet@1x.webp 1x,
+                      ./images/product/ice-pink-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-pink-tablet@1x.png 1x,
+                      ./images/product/ice-pink-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-pink.webp    1x,
+                      ./images/product/ice-pink@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-pink.png    1x,
+                      ./images/product/ice-pink@2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="buy__img"
+                    src="./images/product/ice-pink.png"
+                    alt=""
+                  />
+                </picture>
+
                 <h3 class="buy__caption">ICE CREAM</h3>
                 <svg class="buy__cross">
                   <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -236,7 +598,62 @@
                 </div>
               </li>
               <li class="buy__items">
-                <img class="buy__img" src="./images/banana-ice.png" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/banana-ice-mobile@1x.webp 1x,
+                      ./images/product/banana-ice-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/banana-ice-mobile@1x.png 1x,
+                      ./images/product/banana-ice-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/banana-ice-tablet@1x.webp 1x,
+                      ./images/product/banana-ice-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/banana-ice-tablet@1x.png 1x,
+                      ./images/product/banana-ice-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/banana-ice.webp    1x,
+                      ./images/product/banana-ice@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/banana-ice.png    1x,
+                      ./images/product/banana-ice@2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="buy__img"
+                    src="./images/product/banana-ice.png"
+                    alt=""
+                  />
+                </picture>
+
                 <h3 class="buy__caption">ICE COFFEE</h3>
                 <svg class="buy__cross">
                   <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -262,7 +679,62 @@
                 </div>
               </li>
               <li class="buy__items">
-                <img class="buy__img" src="./images/ice-chocolate.png" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-chocolate-mobile@1x.webp 1x,
+                      ./images/product/ice-chocolate-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-chocolate-mobile@1x.png 1x,
+                      ./images/product/ice-chocolate-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-chocolate-tablet@1x.webp 1x,
+                      ./images/product/ice-chocolate-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-chocolate-tablet@1x.png 1x,
+                      ./images/product/ice-chocolate-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/product/ice-chocolate.webp    1x,
+                      ./images/product/ice-chocolate@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/product/ice-chocolate.png    1x,
+                      ./images/product/ice-chocolate@2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="buy__img"
+                    src="./images/product/ice-chocolate.png"
+                    alt=""
+                  />
+                </picture>
+
                 <h3 class="buy__caption">ICE CREAM</h3>
                 <svg class="buy__cross">
                   <use href="./images/sprite.svg#icon-cross-white"></use>
@@ -305,7 +777,58 @@
             HOW IT’S MADE?
           </h2>
           <div class="love__group">
-            <img class="love__img" src="./images/milk-cow.png" alt="" />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/love/milk-cow-mobile@1x.webp 1x,
+                  ./images/love/milk-cow-mobile@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/love/milk-cow-mobile@1x.png 1x,
+                  ./images/love/milk-cow-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/love/milk-cow-tablet@1x.webp 1x,
+                  ./images/love/milk-cow-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/love/milk-cow-tablet@1x.png 1x,
+                  ./images/love/milk-cow-tablet@2x.png 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/love/milk-cow.webp    1x,
+                  ./images/love/milk-cow@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./images/love/milk-cow.png    1x,
+                  ./images/love/milk-cow@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img class="love__img" src="./images/love/milk-cow.png" alt="" />
+            </picture>
+
             <div class="love__inner">
               <p class="love__subtitle">
                 Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -422,74 +945,608 @@
           <h2 class="hide">biography</h2>
           <div class="bio__container">
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic1.jpg"
-                alt="home-pic2"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-1@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-1@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-1@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-1@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic1.webp    1x,
+                    ./images/bio/home-pic1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic1.jpg    1x,
+                    ./images/bio/home-pic1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="bio__img"
+                  src="./images/bio/home-pic1.jpg"
+                  alt="home-pic1"
+                />
+              </picture>
             </div>
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic2.jpg"
-                alt="home-pic1"
-              />
-              <img
-                class="bio__img"
-                src="./images/home-pic3.jpg"
-                alt="home-pic3"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-2@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-2@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-2@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-2@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic2.webp    1x,
+                    ./images/bio/home-pic2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic2.jpg    1x,
+                    ./images/bio/home-pic2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic2.jpg"
+                  alt="home-pic2"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-3@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-3@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-3@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-3@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-3@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic3.webp    1x,
+                    ./images/bio/home-pic3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic3.jpg    1x,
+                    ./images/bio/home-pic3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic3.jpg"
+                  alt="home-pic3"
+                />
+              </picture>
             </div>
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic4.jpg"
-                alt="home-pic4"
-              />
-              <img
-                class="bio__img"
-                src="./images/home-pic5.jpg"
-                alt="home-pic5"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-4@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-4@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-4@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-4@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-4@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic4.webp    1x,
+                    ./images/bio/home-pic4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic4.jpg    1x,
+                    ./images/bio/home-pic4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic4.jpg"
+                  alt="home-pic4"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-5@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-5@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-5@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-5@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-5@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-5@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-5@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-5@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic5.webp    1x,
+                    ./images/bio/home-pic5@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic5.jpg    1x,
+                    ./images/bio/home-pic5@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic5.jpg"
+                  alt="home-pic5"
+                />
+              </picture>
             </div>
 
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic6.jpg"
-                alt="home-pic6"
-              />
-              <img
-                class="bio__img"
-                src="./images/home-pic7.jpg"
-                alt="home-pic7"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-6@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-6@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-6@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-6@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-6@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-6@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-6@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-6@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic6.webp    1x,
+                    ./images/bio/home-pic6@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic6.jpg    1x,
+                    ./images/bio/home-pic6@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic6.jpg"
+                  alt="home-pic6"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-7@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-7@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-7@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-7@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-7@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-7@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-7@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-7@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic7.webp    1x,
+                    ./images/bio/home-pic7@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic7.jpg    1x,
+                    ./images/bio/home-pic7@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic7.jpg"
+                  alt="home-pic7"
+                />
+              </picture>
             </div>
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic8.jpg"
-                alt="home-pic8"
-              />
-              <img
-                class="bio__img"
-                src="./images/home-pic9.jpg"
-                alt="home-pic9"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-8@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-8@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-8@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-8@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-8@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-8@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-8@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-8@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic8.webp    1x,
+                    ./images/bio/home-pic8@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic8.jpg    1x,
+                    ./images/bio/home-pic8@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic8.jpg"
+                  alt="home-pic8"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-9@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-9@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-9@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-9@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-9@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-9@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-9@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-9@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic9.webp    1x,
+                    ./images/bio/home-pic9@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic9.jpg    1x,
+                    ./images/bio/home-pic9@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic9.jpg"
+                  alt="home-pic9"
+                />
+              </picture>
             </div>
             <div class="bio__group">
-              <img
-                class="bio__img"
-                src="./images/home-pic10.jpg"
-                alt="home-pic10"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-mobile-10@1x.webp 1x,
+                    ./images/bio/home-pic-mobile-10@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-mobile-10@1x.jpg 1x,
+                    ./images/bio/home-pic-mobile-10@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic-tablet-10@1x.webp 1x,
+                    ./images/bio/home-pic-tablet-10@2x.webp 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic-tablet-10@1x.jpg 1x,
+                    ./images/bio/home-pic-tablet-10@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/bio/home-pic10.webp    1x,
+                    ./images/bio/home-pic10@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./images/bio/home-pic10.jpg    1x,
+                    ./images/bio/home-pic10@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  class="bio__img"
+                  src="./images/bio/home-pic10.jpg"
+                  alt="home-pic10"
+                />
+              </picture>
             </div>
           </div>
 
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="bio__avatar" src="./images/avatar1.jpg" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/bio/avatar1@1x.webp 1x,
+                      ./images/bio/avatar1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      ./images/bio/avatar1@1x.jpg 1x,
+                      ./images/bio/avatar1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="bio__avatar"
+                    src="./images/bio/avatar1.jpg"
+                    alt=""
+                  />
+                </picture>
+
                 <div class="comments">
                   <p class="bio__subtitle">
                     Nullam viverra consectetuer. Quisque cursus et, porttitor
@@ -506,7 +1563,27 @@
                 <h3 class="bio__title">Emily, Los Angeles</h3>
               </div>
               <div class="swiper-slide">
-                <img class="bio__avatar" src="./images/avatar2.jpg" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/bio/avatar2@1x.webp 1x,
+                      ./images/bio/avatar2@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      ./images/bio/avatar2@1x.jpg 1x,
+                      ./images/bio/avatar2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="bio__avatar"
+                    src="./images/bio/avatar2.jpg"
+                    alt=""
+                  />
+                </picture>
                 <div class="comments">
                   <p class="bio__subtitle">
                     Hello friends I am a great fan of eating ice creams and I
@@ -525,7 +1602,27 @@
                 <h3 class="bio__title">Anjella, New York</h3>
               </div>
               <div class="swiper-slide">
-                <img class="bio__avatar" src="./images/avatar3.jpg" alt="" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/bio/avatar3@1x.webp 1x,
+                      ./images/bio/avatar3@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      ./images/bio/avatar3@1x.jpg 1x,
+                      ./images/bio/avatar3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="bio__avatar"
+                    src="./images/bio/avatar3.jpg"
+                    alt=""
+                  />
+                </picture>
                 <div class="comments">
                   <p class="bio__subtitle">
                     I think we all are Ice cream lovers and the best of Ice
@@ -580,10 +1677,14 @@
               </ul>
               <ul class="adress">
                 <li class="adress__item">
-                  <a class="adress__link" href="">+61(0) 383 766 284</a>
+                  <a class="adress__link" href="tel:+610383766284"
+                    >+61(0) 383 766 284</a
+                  >
                 </li>
                 <li class="adress__item">
-                  <a class="adress__link" href="">noreply@envato.com</a>
+                  <a class="adress__link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
                 </li>
               </ul>
             </li>
@@ -615,10 +1716,14 @@
               </ul>
               <ul class="adress">
                 <li class="adress__item">
-                  <a class="adress__link" href="">+61(0) 383 766 284</a>
+                  <a class="adress__link" href="tel:+610383766284"
+                    >+61(0) 383 766 284</a
+                  >
                 </li>
                 <li class="adress__item">
-                  <a class="adress__link" href="">noreply@envato.com</a>
+                  <a class="adress__link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
                 </li>
               </ul>
             </li>
@@ -650,10 +1755,14 @@
               </ul>
               <ul class="adress">
                 <li class="adress__item">
-                  <a class="adress__link" href="">+61(0) 383 766 284</a>
+                  <a class="adress__link" href="tel:+610383766284">
+                    +61(0) 383 766 284</a
+                  >
                 </li>
                 <li class="adress__item">
-                  <a class="adress__link" href="">noreply@envato.com</a>
+                  <a class="adress__link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
                 </li>
               </ul>
             </li>
@@ -800,28 +1909,28 @@
           </h2>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="">
+              <a class="footer__link" href="https://github.com/">
                 <svg class="footer__icon">
                   <use href="./images/sprite.svg#icon-github"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">
+              <a class="footer__link" href="https://web.telegram.org/k/">
                 <svg class="footer__icon">
                   <use href="./images/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="">
+              <a class="footer__link" href="https://www.facebook.com/">
                 <svg class="footer__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__tel" href=""
+              <a class="footer__tel" href="tel:+610383766284"
                 >Feel free to contact<span class="footer__tel--red"
                   >+61 (0) 383 766 284</span
                 ></a

@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   font-family: DM Sans, sans-serif;
 }
@@ -270,10 +274,15 @@ ul {
   .hero-section {
     padding-top: 0px;
     padding-bottom: 0px;
-    background-image: url(/images/Ellipse3.png);
+    background-image: url("../../images/hero/Ellipse3.png");
     background-position: calc(50% + 50px) calc(50% + 2px);
     background-repeat: no-repeat;
     background-size: 346px;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../../images/hero/Ellipse3@2x.png");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -288,7 +297,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(../../images/ice-horn.png);
+    background-image: url("../../images/hero/ice-horn.png");
     text-align: left;
     height: 502px;
     background-position: calc(50% + 43px) bottom;
@@ -296,6 +305,11 @@ ul {
     background-size: 171px;
     padding-top: 194px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/hero/ice-horn@2x.png");
   }
 }
 
@@ -914,9 +928,14 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .love-section {
-    background-image: url(../../images/bg-love-desctop_left@1x.png), url(../../images/bg-love-desctop_rigth@1x.png);
+    background-image: url("../../images/love/bg-love-desctop_left@1x.png"), url("../../images/love/bg-love-desctop_rigth@1x.png");
     background-position: 0 35%, 100% 35%;
     background-size: 33%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .love-section {
+    background-image: url("../../images/love/bg-love-desctop_left@2x.png"), url("../../images/love/bg-love-desctop_right@2x.png");
   }
 }
 @media screen and (max-width: 767px) {
@@ -1018,10 +1037,15 @@ ul {
   .love__inner {
     padding: 0;
     width: 280px;
-    background-image: url(../../images/bg-love-mobile@1x.png);
+    background-image: url("../../images/love/bg-love-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 35%;
     background-size: 100%;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .love__inner {
+    background-image: url("../../images/love/bg-love-mobile@2x.png");
   }
 }
 @media screen and (max-width: 319px) {
@@ -1309,12 +1333,12 @@ ul {
   border: 1px solid #d41443;
   background-color: #ffb8ca;
   border-radius: 10px;
+  background-image: url("../../images/love/bg-love-mobile@1x.png");
   background-size: 100%;
-  background-image: url(../images/bg-about-image-sm@1x.png);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .data-modal-about {
-    background-image: url(../images/bg-about-image-sm@2x.png);
+    background-image: url("../../images/love/bg-love-mobile@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
@@ -1403,7 +1427,7 @@ ul {
 
 .bio {
   position: relative;
-  padding-top: 361px;
+  padding-top: 461px;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
@@ -1422,14 +1446,19 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: -64px;
-  left: 220px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .bio__container {
+    width: 1013px;
+    top: -85px;
+    left: 73px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .bio__container {
@@ -1470,14 +1499,14 @@ ul {
 }
 .bio__container .bio__img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
   margin: 5px;
 }
 @media screen and (max-width: 767px) {
   .bio__container .bio__img {
-    width: 43px;
-    height: 43px;
+    width: auto;
+    height: auto;
     margin: 1.265px;
   }
 }
@@ -2126,7 +2155,7 @@ ul {
   height: 34px;
   fill: #d41443;
 }
-.footer__icon:hover {
+.footer__icon:hover, .footer__icon:focus {
   fill: #fea5bb;
 }
 .footer__tel {
@@ -2148,7 +2177,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .footer__tel--red {
-    ont-size: 13px;
+    font-size: 13px;
     line-height: 24px;
     letter-spacing: 0em;
   }
@@ -2221,11 +2250,11 @@ ul {
   background-color: #ffb8ca;
   border-radius: 10px;
   background-size: 100%;
-  background-image: url(../images/bg-about-image-sm@1x.png);
+  background-image: url("../images/love/bg-love-mobile@1x.png");
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .data-modal-about {
-    background-image: url(../images/bg-about-image-sm@2x.png);
+    background-image: url("../../images/love/bg-love-mobile@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
@@ -3421,7 +3450,7 @@ input[type=password] {
 
 .location .location__list {
   position: absolute;
-  bottom: -150px;
+  bottom: -10px;
   left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

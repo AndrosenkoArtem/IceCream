@@ -4,11 +4,17 @@
   background-color: #fff5f6;
   background-repeat: no-repeat;
   @media screen and (min-width: 1200px) {
-    background-image: url(../../images/bg-love-desctop_left@1x.png),
-      url(../../images/bg-love-desctop_rigth@1x.png);
+    background-image: url("../../images/love/bg-love-desctop_left@1x.png"),
+      url("../../images/love/bg-love-desctop_rigth@1x.png");
 
     background-position: 0 35%, 100% 35%;
     background-size: 33%;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../../images/love/bg-love-desctop_left@2x.png"),
+        url("../../images/love/bg-love-desctop_right@2x.png");
+    }
   }
   @media screen and (max-width: 767px) {
     padding-bottom: 87px;
@@ -88,10 +94,15 @@
   @media screen and (max-width: 767px) {
     padding: 0;
     width: 280px;
-    background-image: url(../../images/bg-love-mobile@1x.png);
+    background-image: url("../../images/love/bg-love-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 35%;
     background-size: 100%;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../../images/love/bg-love-mobile@2x.png");
+    }
   }
   @media screen and (max-width: 319px) {
     width: 100%;
@@ -320,14 +331,13 @@
   border: 1px solid $red-text-color;
   background-color: #ffb8ca;
   border-radius: 10px;
-
+  background-image: url("../../images/love/bg-love-mobile@1x.png");
   background-size: 100%;
-  background-image: url(../images/bg-about-image-sm@1x.png);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg-about-image-sm@2x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../../images/love/bg-love-mobile@2x.png");
   }
   @media screen and (min-width: 768px) {
     width: 528px;
