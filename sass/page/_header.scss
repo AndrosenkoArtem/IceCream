@@ -52,6 +52,9 @@
   display: contents;
 }
 .site-nav {
+  @media screen and (min-width: 1200px) {
+    pointer-events: all;
+  }
   @media screen and (max-width: 1199px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -86,6 +89,9 @@
   border-radius: 22px;
   color: $red-text-color;
   background-color: $white-color;
+  @media screen and (min-width: 1200px) {
+    pointer-events: all;
+  }
   @include font-style;
   &:hover,
   &:focus {
